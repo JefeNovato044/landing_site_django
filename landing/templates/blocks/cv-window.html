@@ -1,0 +1,13 @@
+{% load static %}
+<div class="u-align-center u-container-style u-list-item u-opacity u-opacity-90 u-repeater-item u-white u-list-item-1">
+    <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+      
+      <img src={% static 'images/'|add:img_name %} alt=""  class="avatar"> 
+      
+      <h3 class="u-custom-font u-font-oswald u-text u-text-4 cen">{{name}}</h3>
+      <p class="u-align-center u-text u-text-palette-1-base u-text-5">{{role}}</p>
+      <p class="u-align-center u-text u-text-6">{{description}}</p>
+      
+      <a class="btn btn-light action-button text-secondary" role="button" href="{% url pdfUrl pdfV %}"><strong>Download CV</strong></a> 
+    </div>
+  </div>
