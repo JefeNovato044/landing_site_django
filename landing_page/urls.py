@@ -18,6 +18,8 @@ from os import name
 from django.contrib import admin
 from django.urls import path
 from landing.views import Index, PDF_Viewer
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
