@@ -1,4 +1,5 @@
-"""landing_page URL Configuration
+"""
+landing_page URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -23,4 +24,4 @@ urlpatterns = [
     path('pdf/<str:pk>/', PDF_Viewer, name='pdf-url'),
     path('', Index, name=''),
    
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
